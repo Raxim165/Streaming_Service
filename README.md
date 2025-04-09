@@ -1,50 +1,28 @@
-# React + TypeScript + Vite
+# Streaming Service Movies
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+это веб-приложение, которое позволяет пользователям просматривать трейлеры фильмов, получать информацию о фильмах и регистрироваться для добавления фильмов в избранное.
 
-Currently, two official plugins are available:
+## Технологии
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React — библиотека JavaScript для построения пользовательских интерфейсов.
+TypeScript — статически типизированный язык программирования, который расширяет возможности JavaScript.
+Redux Toolkit — инструмент для управления состоянием приложения.
+Axios — клиент HTTP-запросов для работы с API.
+React Router — маршрутизация в приложении на основе React.
+React YouTube — компонент для встраивания видео с YouTube.
 
-## Expanding the ESLint configuration
+В качестве сборщика используется [vite](https://vitejs.dev/)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Установка и запуск
 
-- Configure the top-level `parserOptions` property like this:
+### 1. Клонируйте репозиторий:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+git clone https://github.com/<your_username>/MovieTrailerApp.git
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 2. Установите зависимости и запустите приложение в IDE:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+npm install
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+npm run dev
+
+### 3. Откройте браузер и перейдите по адресу http://localhost:<port>
