@@ -22,6 +22,7 @@ git clone https://github.com/<your_username>/MovieTrailerApp.git
 ### 2. Установите зависимости и запустите приложение в IDE:
 
 npm install
+
 npm run dev
 
-### 3. Откройте браузер и перейдите по адресу http://localhost:<port>
+### 3. Откройте браузер и перейдите по адресу http://localhost:5173
