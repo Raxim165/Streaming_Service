@@ -25,4 +25,4 @@ npm install
 
 npm run dev
 
-### 3. Откройте браузер и перейдите по адресу http://localhost:<port>
+### 3. Откройте браузер и перейдите по адресу http://localhost:<port>/
