@@ -6,10 +6,10 @@
 
 - **React** — библиотека JavaScript для построения пользовательских интерфейсов.
 - **TypeScript** — статически типизированный язык программирования, который расширяет возможности JavaScript.
-Redux Toolkit — инструмент для управления состоянием приложения.
-Axios — клиент HTTP-запросов для работы с API.
-React Router — маршрутизация в приложении на основе React.
-React YouTube — компонент для встраивания видео с YouTube.
+- **Redux Toolkit** — инструмент для управления состоянием приложения.
+- **Axios** — клиент HTTP-запросов для работы с API.
+- **React Router** — маршрутизация в приложении на основе React.
+- **React YouTube** — компонент для встраивания видео с YouTube.
 
 В качестве сборщика используется [vite](https://vitejs.dev/)
 
@@ -22,7 +22,6 @@ git clone https://github.com/<your_username>/MovieTrailerApp.git
 ### 2. Установите зависимости и запустите приложение в IDE:
 
 npm install
-
 npm run dev
 
 ### 3. Откройте браузер и перейдите по адресу http://localhost:<port>
