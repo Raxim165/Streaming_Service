@@ -1,0 +1,92 @@
+.registration-modal {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  inset: 0;
+  z-index: 7;
+}
+
+.registration-wrapper {
+  padding: 0 72px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.registration-close {
+  position: absolute;
+  right: 0;
+  display: flex;
+  padding: 0;
+}
+
+.registration-close svg rect {
+  transition: fill 0.3s ease-in-out;
+}
+
+.registration-close:hover svg rect {
+  fill: rgb(177, 177, 177);
+}
+
+.registration-content {
+  width: 420px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border-radius: 20px;
+  padding: 64px 40px;
+}
+
+.registration-logo {
+  width: 156px;
+  margin: 0 auto;
+}
+
+.registration-title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 24px;
+  color: #000;
+}
+
+.registration-text {
+  text-align: center;
+  color: #000;
+}
+
+.registration-button {
+  background-color: #67A5EB ;
+  padding: 16px 0;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.registration-button:hover {
+  background-color: #9abfe9;
+}
+
+.registration-button:active {
+  background-color: #3c90f0;
+}
+
+.registration-button:focus {
+  outline: 2px solid #3c90f0;
+  outline-offset: 3px;
+}
+
+@media (max-width: 580px) {
+  .registration-wrapper {
+    padding: 0;
+  }
+
+  .registration-content {
+    width: 335px;
+    padding: 45px 20px;
+  }
+}
+
+@media (max-width: 370px) {
+  .registration-content {
+    width: 290px;
+  }
+}

@@ -1,0 +1,125 @@
+.auth-modal {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  inset: 0;
+  z-index: 7;
+}
+
+.auth-wrapper {
+  padding: 0 72px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.auth-close {
+  position: absolute;
+  right: 0;
+  display: flex;
+  padding: 0;
+}
+
+.auth-close svg rect {
+  transition: fill 0.3s ease-in-out;
+}
+
+.auth-close:hover svg rect {
+  fill: rgb(177, 177, 177);
+}
+
+.auth-form {
+  width: 420px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-radius: 20px;
+  padding: 64px 40px;
+}
+
+.auth-logo {
+  width: 156px;
+  margin: 0 auto;
+}
+
+.auth-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+}
+
+.auth-input {
+  width: 100%;
+  border: 1px solid gray;
+  padding: 16px 16px 16px 52px ;
+  border-radius: 8px;
+}
+
+.auth-input-wrapper {
+  position: relative;
+}
+
+.auth-input-icon {
+  position: absolute;
+  left: 15px;
+  top: 25%;
+}
+
+.auth-button-login{
+  margin-top: 12px;
+  background-color: #67A5EB ;
+  padding: 16px 0;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.auth-button-login:hover {
+  background-color: #9abfe9;
+}
+
+.auth-button-login:active {
+  background-color: #3c90f0;
+}
+
+.auth-button-login:focus {
+  outline: 2px solid #3c90f0;
+  outline-offset: 3px;
+}
+
+.auth-error {
+  color: #FF7575;
+}
+
+.auth-button-logout {
+  margin-top: 12px;
+  background-color: transparent;
+  padding: 16px 0;
+  color: #000;
+  transition: color 0.3s ease-in-out;
+}
+
+.auth-button-logout:hover {
+  color: #3c90f0;
+}
+
+.auth-button-logout:focus {
+  outline: 2px solid #3c90f0;
+}
+
+@media (max-width: 580px) {
+  .auth-wrapper {
+    padding: 0;
+  }
+
+  .auth-form {
+    width: 335px;
+    padding: 45px 20px;
+  }
+}
+
+@media (max-width: 370px) {
+  .auth-form {
+    width: 290px;
+  }
+}

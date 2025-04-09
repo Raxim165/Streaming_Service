@@ -1,0 +1,176 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0 24px 0;
+}
+
+.nav {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-link {
+  position: relative;
+  padding-bottom: 10px;
+  padding-bottom: 4px;
+  font-size: 24px;
+  transition: color 0.3s ease-in-out
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  background-color: #DC5DFC;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.active-nav-link::after {
+  transform: scaleX(1);
+}
+
+.nav-link-genres {
+  transition: color 0.3s ease-in-out
+}
+
+.nav-link:hover, .nav-link span:hover, .button-login span:hover {
+  color: #eb9dff;
+}
+
+.nav-link:focus, .nav-link span:focus, .button-login:focus {
+  text-shadow: 9px 9px 12px #9d00c4, -9px -9px 12px #9d00c4;
+}
+
+.button-login:focus {
+  outline: none;
+}
+
+.nav-link:active, .nav-link > span:active, .button-login > span:active {
+  color: #9d00c4;
+}
+
+.active-link {
+  text-decoration: underline ;
+}
+
+.search-wrapper {
+  position: relative;
+  z-index: 4;
+}
+
+.input-search {
+  background: url('../../assets/icons/search.svg') no-repeat 10px center;
+  color: #fff;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  width: 34vw;
+  padding: 10px 0 10px 45px;
+  border-radius: 8px;
+  background-color: #393B3C;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.input-search:hover {
+  background-color: #4f5153;
+}
+
+.input-search:focus {
+  outline: 2px solid #8b8b8b;
+}
+
+.input-search::placeholder {
+  color: #cdcdcd;
+}
+
+.button-clear {
+  width: 24px;
+  height: 24px;
+  background: url('../../assets/icons/close_search.svg') no-repeat;
+  position: absolute;
+  margin: 7px 0 0 -30px;
+}
+
+.button-clear:hover {
+  background-color: #8b8b8b;
+}
+
+.button-search {
+  background: transparent;
+  height: 26px;
+  margin: 0 10px 0 10px;
+}
+
+.button-login {
+  font-weight: 400;
+  background: transparent;
+}
+
+.button-login span {
+  transition: color 0.3s ease-in-out;
+}
+
+@media (max-width: 900px) {
+  .nav {
+    gap: 20px;
+  }
+
+  .nav-link {
+    font-size: 16px;
+  }
+
+  .button-login {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 660px) {
+  .header {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .logo {
+    width: 80px;
+    margin-right: auto;
+  }
+
+  .search-wrapper {
+    position: absolute;
+  }
+
+  .input-search {
+    width: 70vw;
+  }
+
+  .nav-link-main, .nav-link-genres, .search-wrapper, .button-login span {
+    display: none;
+  }
+
+  .button-search, .button-login svg, .nav-link svg {
+    display: block;
+  }
+
+  .button-clear {
+    display: inline-block;
+  }
+}
+
+@media (max-width: 460px) {
+  .input-search {
+    width: 92vw;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.open {
+  display: block;
+}

@@ -1,0 +1,31 @@
+.footer {
+  padding: 40px 0;
+  display: flex;
+  justify-content: right;
+  gap: 24px;
+}
+
+.footer a path,
+.footer a rect {
+  transition: all 0.3s ease-in-out;
+}
+
+.footer a:hover path {
+  fill: #eb9dff;
+}
+
+.footer a:hover rect {
+  stroke: #eb9dff;
+}
+
+
+@media (max-width: 660px) {
+  .footer {
+    justify-content: left;
+    padding: 24px 0;
+  }
+
+  .footer a svg {
+    width: 24px;
+  }
+}

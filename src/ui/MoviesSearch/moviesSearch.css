@@ -1,0 +1,90 @@
+.search-movies {
+  width: 559px;
+  position: absolute;
+  left: 47%;
+  top: 70px;
+  z-index: 4;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #393B3C;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-movie {
+  padding: 10px 8px;
+  display: flex;
+  gap: 16px;
+}
+
+.search-movie-img {
+  width: 40px;
+  height: 52px;
+}
+
+.search-movie-info {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.search-movie-raiting {
+  width: fit-content;
+  height: fit-content;
+  font-size: 12px;
+  border-radius: 20px;
+  padding: 4px 10px 4px 25px;
+  background: url('../../assets/icons/star.svg') no-repeat;
+  background-position: 10px;
+  background-size: 12px 12px;
+}
+
+.search-movie-genres {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.search-movie-title {
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0;
+}
+
+@media (max-width: 1130px) {
+  .search-movies {
+    width: 55vw;
+    flex-direction: row;
+    overflow-x: auto;
+    left: 40%;
+  }
+
+  .search-movie {
+    flex-direction: column;
+    width: 250px;
+  }
+
+  .search-movie-info {
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .search-movie-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 660px) {
+  .search-movies {
+    left: 15px;
+    width: 92vw;
+  }
+
+  .search-modal {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    inset: 0;
+    z-index: 3;
+  }
+}

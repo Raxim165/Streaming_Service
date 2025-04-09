@@ -1,0 +1,52 @@
+.favorites-movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(224px, 1fr));
+  column-gap: 40px;
+  row-gap: 64px;
+  margin-bottom: 64px;
+}
+
+.favorites-movies-item {
+  position: relative;
+  padding: 10px 10px 0 0;
+}
+
+.favorites-img {
+  width: 224px;
+  height: 336px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 80px rgb(255, 255, 255, 0.1), -5px -5px 80px rgb(255, 255, 255, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.favorites-img:hover {
+  box-shadow: 15px 15px 80px rgb(255, 255, 255, 0.30), -15px -15px 80px rgb(255, 255, 255, 0.30);
+}
+
+.favorites-delete-movie {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  padding: 0;
+}
+
+.favorites-delete-movie > svg rect {
+  transition: fill 0.3s ease-in-out;
+}
+
+.favorites-delete-movie:hover > svg rect {
+  fill: rgb(177, 177, 177);
+}
+
+@media (max-width: 520px) {
+  .favorites-movies {
+    overflow-x: auto;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(224px, 1fr);
+  }
+
+  .favorites-img {
+    box-shadow: none;
+  }
+}

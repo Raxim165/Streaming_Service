@@ -1,0 +1,97 @@
+.genre-button-back {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 64px;
+  display: inline-flex;
+  align-items: center;
+  transition: color 0.3s ease-in-out;
+}
+
+.genre-button-back svg path {
+  fill: currentColor;
+}
+
+.genre-button-back:hover {
+  color: #eb9dff;
+}
+
+.genre-button-back:focus {
+  text-shadow: 4px 4px 10px #9d00c4, -4px -4px 10px #9d00c4;
+}
+
+.genre-button-back:active {
+  color: #9d00c4;
+}
+
+
+.genre-button-back svg {
+  margin-right: 15px;
+}
+
+.genre-movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(224px, 1fr));
+  column-gap: 40px;
+  row-gap: 64px;
+  margin-bottom: 64px;
+}
+
+.genre-movies-item a img {
+  /* opacity: 0.02; */
+  width: 224px;
+  height: 336px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 80px rgb(255, 255, 255, 0.1), -5px -5px 80px rgb(255, 255, 255, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.genre-movies-item a img:hover {
+  box-shadow: 15px 15px 80px rgb(255, 255, 255, 0.30), -15px -15px 80px rgb(255, 255, 255, 0.30);
+}
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.button-show-more {
+  padding: 16px 48px;
+  background-color: #67A5EB;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button-show-more:hover {
+  background-color: #9abfe9;
+}
+
+.button-show-more:focus {
+  outline: 2px solid #3c90f0;
+  outline-offset: 3px;
+}
+
+.button-show-more:active {
+  background-color: #3c90f0;
+}
+
+
+@media (max-width: 790px) {
+  .genre-movies {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 501px) {
+  .genre-movies {
+    justify-self: center;
+  }
+
+  .genre-movies-item img{
+    width: 335px;
+    height: 502px;
+  }
+
+  .genre-button-back {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+}
