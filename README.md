@@ -17,7 +17,7 @@
 
 ### 1. Клонируйте репозиторий:
 
-git clone https://github.com/Raxim165/Streaming_Service.git
+git clone https://github.com/Raxim165/Movies.git
 
 ### 2. Установите зависимости и запустите приложение в IDE:
 ```
